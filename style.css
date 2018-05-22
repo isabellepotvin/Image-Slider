@@ -1,0 +1,94 @@
+
+.slider {
+	width: 100%;
+	height: 100vh;
+	overflow: hidden;
+	position: relative;
+}
+
+#slider-images {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+}
+
+#slider-images img {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	object-fit: cover;
+	opacity: 0;
+	transition: opacity 0.8s ease-in-out;
+}
+
+#slider-images img#image-active {
+	opacity: 1;
+	z-index: -1;
+	transition: none;
+}
+
+#slider-progress {
+	position: absolute;
+	z-index: 10;
+	bottom: 10px;
+	display: block;
+	width: 100%;
+	text-align: center;
+}
+
+#slider-progress > div {
+	height: 20px;
+	width: 20px;
+	box-sizing: border-box;
+	/* background-color: white; */
+	display: inline-block;
+	margin: 0 5px;
+	border-radius: 50%;
+	border: 3px solid white;
+	
+	transition: background-color 0.5s ease-in-out;
+}
+
+#slider-progress > div:hover {
+	cursor: pointer;
+}
+
+#progress-active {
+	background-color: white;
+}
+
+#slider-arrows {
+	position: absolute;
+	z-index: 10;
+	color: white;
+	top: 45%;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	box-sizing: border-box;
+	font-size: 40px;
+}
+
+#slider-arrows > div{
+	background-color: rgba(0,0,0,0.4);
+	padding: 10px;
+}
+
+#slider-arrows > div:hover {
+	cursor: pointer;
+	background-color: rgba(0,0,0,0.9);
+}
+
+#slider-arrows > div.left-arrow {
+	border-radius: 0 5px 5px 0;
+	padding-right: 15px;
+}
+
+#slider-arrows > div.right-arrow {
+	border-radius: 10px 0 0 10px;
+	padding-left: 15px;
+}
+
+
+
+
