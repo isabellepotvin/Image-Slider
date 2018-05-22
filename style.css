@@ -18,55 +18,60 @@
 	position: absolute;
 	object-fit: cover;
 	opacity: 0;
+	
 	transition: opacity 0.8s ease-in-out;
 }
 
 #slider-images img#image-active {
 	opacity: 1;
+	
 	z-index: -1;
 	transition: none;
 }
 
 #slider-progress {
-	position: absolute;
+	position: absolute;									/* 1 */
 	z-index: 10;
-	bottom: 10px;
-	display: block;
-	width: 100%;
+	
+	bottom: 20px;										/* 3 */
+	
+	width: 100%;										/* 3 */
 	text-align: center;
 }
 
 #slider-progress > div {
-	height: 20px;
+	height: 20px;										/* 1 */
 	width: 20px;
 	box-sizing: border-box;
 	/* background-color: white; */
 	display: inline-block;
-	margin: 0 5px;
-	border-radius: 50%;
 	border: 3px solid white;
 	
-	transition: background-color 0.5s ease-in-out;
+	border-radius: 50%;									/* 2 */
+	margin: 0 5px;
+	
+	transition: background-color 0.5s ease-in-out; 		/* 5 */
 }
 
 #slider-progress > div:hover {
-	cursor: pointer;
+	cursor: pointer;									/* 4 */
 }
 
 #progress-active {
-	background-color: white;
+	background-color: white;							/* 4 */
 }
 
 #slider-arrows {
 	position: absolute;
 	z-index: 10;
 	color: white;
+	font-size: 40px;
+	
 	top: 45%;
+	
 	width: 100%;
 	display: flex;
 	justify-content: space-between;
-	box-sizing: border-box;
-	font-size: 40px;
 }
 
 #slider-arrows > div{
@@ -80,7 +85,7 @@
 }
 
 #slider-arrows > div.left-arrow {
-	border-radius: 0 5px 5px 0;
+	border-radius: 0 10px 10px 0;
 	padding-right: 15px;
 }
 

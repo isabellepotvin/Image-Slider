@@ -1,0 +1,56 @@
+/*
+
+HTML
+- slider with images
+
+CSS
+- from slider to active image (do not put in transition or z-index yet)
+
+JS
+- add all of the vars at the top (except ProgressDivs)
+- start writting function (without n)
+	- changes image
+	- index out of bounds
+	- timeout
+	
+CSS
+- add transitions (x2) and z-index to images 
+	
+-----------------------------------------------
+	
+HTML
+- add progress divs
+
+CSS
+- progress numbers (1 - 4)
+
+JS
+- add progressDivs variable at the top
+- add n to function
+- changes progress
+- incoming info
+		if (n != null) {
+			window.clearTimeout(timeoutHandle);
+			sliderIndex = n;
+		}
+		else {
+			sliderIndex++;
+		}
+
+CSS
+- add transition (5)
+
+-----------------------------------------------
+
+HTML
+- add font awesome link
+- add arrows (go to the site and copy the code)
+
+CSS
+- arrow css
+
+JS
+- add other stuff to else if statement
+
+*/
+
